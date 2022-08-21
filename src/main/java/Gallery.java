@@ -4,6 +4,8 @@ public class Gallery {
     String galleryName;
     String artCollection;
 
+    String
+
 
     public Gallery(double till, String galleryName, String artCollection){
         this.till = till;
