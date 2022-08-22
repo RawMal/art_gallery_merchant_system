@@ -15,15 +15,15 @@ public class Artwork {
     }
 
     //Only need to get there is nothing to set
-    public String gettitle() {
+    public String getTitle() {
         return title;
     }
 
-    //public void settitle(String title) {
+    //public void setTitle(String title) {
         //this.title = title;
     //}
 
-    public Artist getartist() {
+    public Artist getArtist() {
         return artist;
     }
 
@@ -31,7 +31,7 @@ public class Artwork {
         //this.artist = artist;
     //}
 
-    public double getprice() {
+    public double getPrice() {
         return price;
     }
 
@@ -39,7 +39,7 @@ public class Artwork {
        // this.price = price;
    // }
 
-    public int getnft() {
+    public int getNft() {
         return nft;
     }
 

@@ -12,7 +12,25 @@ public class Customer {
         this.wallet = wallet;
         this.custCollection = new ArrayList<>();
     }
+    // method to see if customer can afford artwork
+    public boolean canBuy(Artwork artwork){
+        if ( artwork.getPrice() <= this.wallet) {
+            return true;
+        }
+        return false;
+        }
 
+    // method to minus the value of the wallet according to artwork price and add artwork onto their collection
+    public void buyArtwork(Artwork artwork){
+        this.wallet -= artwork.getPrice();
+        this.custCollection.add(artwork);
+    }
+
+    //method to show number of artwork purchased by customer
+    public int getArtworkCount(){return this.custCollection.size();}
+
+
+    // Getters and setters
     public String getcustomerName() {
         return customerName;
     }
@@ -27,5 +45,8 @@ public class Customer {
     public void setwallet(double wallet) {
         this.wallet = wallet;
     }
+
+    public ArrayList<Artwork> getCustomerArtwork() {return custCollection;}
+    public void setCustomerArtwork(ArrayList<Artwork> customerArtwork){this.custCollection = customerArtwork;}
 
 }
