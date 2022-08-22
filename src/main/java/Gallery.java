@@ -16,16 +16,25 @@ public class Gallery {
         this.galleryCollection = new ArrayList<>();
     }
 
+    //Add method for gallery to sell artwork to customer and remove artwork from collection and intake money paid
+    public void sellArtwork(Customer customer, Artwork artwork){
+        if(customer.canBuy(artwork) == true){
+            customer.buyArtwork(artwork);
+            this.galleryCollection.remove(artwork);
+            setTill(this.till + artwork.getPrice());
+        }
+    }
+
     //getters and setters
-    public double gettill(){
+    public double getTill(){
         return till;
     }
 
-    public void settill(double till){
+    public void setTill(double till){
         this.till = till;
     }
 
-    public String getgalleryName(String galleryName){
+    public String getGalleryName(String galleryName){
         return galleryName;
     }
 
