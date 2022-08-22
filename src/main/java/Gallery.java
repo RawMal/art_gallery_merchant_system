@@ -25,6 +25,15 @@ public class Gallery {
         }
     }
 
+    // Add method to calculate current value of artwork
+    public double calculateArtworkValue(){
+        double total = 0;
+        for(Artwork artwork : this.galleryCollection){
+            total += artwork.getPrice();
+        }
+        return total;
+    }
+
     //getters and setters
     public double getTill(){
         return till;

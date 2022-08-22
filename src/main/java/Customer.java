@@ -31,18 +31,18 @@ public class Customer {
 
 
     // Getters and setters
-    public String getcustomerName() {
+    public String getCustomerName() {
         return customerName;
     }
-    public void setcustomerName(String customerName){
+    public void setCustomerName(String customerName){
         this.customerName = customerName;
     }
 
 
-    public double getwallet() {
+    public double getWallet() {
         return wallet;
     }
-    public void setwallet(double wallet) {
+    public void setWallet(double wallet) {
         this.wallet = wallet;
     }
 
