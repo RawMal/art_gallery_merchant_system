@@ -11,7 +11,7 @@ public class Artwork {
         this.title = title;
         this.artist = artist;
         this.price = price;
-        this.nft = (int) (Math.random()*10000 +1);
+        this.nft = nft;
     }
 
     //Only need to get there is nothing to set

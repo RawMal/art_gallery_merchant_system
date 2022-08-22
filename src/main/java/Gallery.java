@@ -34,6 +34,10 @@ public class Gallery {
         return total;
     }
 
+    public int artworkCount(){return this.galleryCollection.size();}
+
+    public void addArtwork(Artwork artwork){this.galleryCollection.add(artwork);}
+
     //getters and setters
     public double getTill(){
         return till;
