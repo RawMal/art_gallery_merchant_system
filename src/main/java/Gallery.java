@@ -1,18 +1,22 @@
+import java.util.ArrayList;
+
 public class Gallery {
 
-    double till;
-    String galleryName;
-    String artCollection;
+    private double till;
+    private String galleryName;
+    private ArrayList<Artwork> galleryCollection;
 
 
 
 
-    public Gallery(double till, String galleryName, String artCollection){
-        this.till = till;
+    public Gallery(String galleryName) {
+        this.till = 0;
         this.galleryName = galleryName;
-        this.artCollection = artCollection;
+        //Need to make the collection an array list so it can hold the stock
+        this.galleryCollection = new ArrayList<>();
     }
 
+    //getters and setters
     public double gettill(){
         return till;
     }
@@ -29,12 +33,10 @@ public class Gallery {
         this.galleryName = galleryName;
     }
 
-    public String getArtCollection(){
-        return artCollection;
-    }
+    public ArrayList<Artwork> getGalleryCollection(){return galleryCollection;}
 
-    public void setArtCollection(String artCollection){
-        this.artCollection = artCollection;
+    public void setGalleryCollection(ArrayList<Artwork> artworks){
+        this.galleryCollection = artworks;
     }
 
 

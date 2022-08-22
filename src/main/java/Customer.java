@@ -1,10 +1,16 @@
+import java.util.ArrayList;
+
 public class Customer {
-    String customerName;
-    double wallet;
+    private String customerName;
+    private double wallet;
+
+    private ArrayList<Artwork> custCollection;
+
 
     public Customer(String customerName, double wallet) {
         this.customerName = customerName;
         this.wallet = wallet;
+        this.custCollection = new ArrayList<>();
     }
 
     public String getcustomerName() {
