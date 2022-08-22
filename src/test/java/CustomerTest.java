@@ -7,8 +7,8 @@ public class CustomerTest {
     Customer customer;
     Artist leonardoDavinci;
     Artwork monaLisa;
-    Artist vincentVanGogh;
-    Artwork irises;
+    Artist rembrandt;
+    Artwork nightWatch;
 
     @BeforeEach
     public void setUp(){
@@ -17,8 +17,8 @@ public class CustomerTest {
         leonardoDavinci = new Artist("Leonardo DaVinci");
         monaLisa = new Artwork("Mona Lisa", leonardoDavinci, 1_000, 846);
 
-        vincentVanGogh = new Artist("Vincent Van Gogh");
-        irises = new Artwork("Irises", vincentVanGogh, 50_000_000, 885);
+        rembrandt = new Artist("Rembrandt");
+        nightWatch = new Artwork("The Night Watch", rembrandt, 50_000_000, 885);
     }
 
     @Test
@@ -28,7 +28,7 @@ public class CustomerTest {
 
     @Test
     public void canAffordArtwork__false(){
-        assertThat(customer.canBuy(irises)).isEqualTo(false);
+        assertThat(customer.canBuy(nightWatch)).isEqualTo(false);
     }
 
     @Test
